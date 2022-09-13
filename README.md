@@ -14,7 +14,7 @@
 - Supply the postgres details in `conf.toml` file.
 - Run the pipeline, successful build will push the docker image to the azure repository. 
 
-img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189934474-0a6410eb-d427-40a5-9341-f3a848c61908.png">
+- <img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189934474-0a6410eb-d427-40a5-9341-f3a848c61908.png">
 
 - Setup an App Service in Azure portal using the docker image. 
  
