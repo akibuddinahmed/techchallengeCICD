@@ -12,12 +12,20 @@
      - Push Docker Image ( This step requires to setup the Azure repository) 
 - <img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189930154-cdc0b5af-b13f-4c3b-880e-fb4082a446b2.png">
 - Supply the postgres details in `conf.toml` file.
-- Run the pipeline
-Screenshot 2022-09-13 at 8.23.25 PM<img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189934474-0a6410eb-d427-40a5-9341-f3a848c61908.png">
+- Run the pipeline, successful build will push the docker image to the azure repository. 
 
-- Setup an App Service in Azure portal by
+img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189934474-0a6410eb-d427-40a5-9341-f3a848c61908.png">
+
+- Setup an App Service in Azure portal using the docker image. 
  
 <img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189933472-1eec7bdf-2df1-4893-b47c-9df369ecc287.png">
+<img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189935040-db61d129-23af-4931-a790-c99d282092a3.png">
+
+- Once the app is setup, it is important to set WEBSITES_PORT as 3000 under application settings. 
+- Under General settings Startup Command can be- 'updatedb' , 'serve' 
+- Final step in the pipeline is to setup- 'Azure Web App for Containers', set the App service name and start-up command as required. 
+<img width="1761" alt="image" src="https://user-images.githubusercontent.com/73784434/189936656-8071275e-9430-435b-a7cc-43db32c047e2.png">
+
 
 
 
