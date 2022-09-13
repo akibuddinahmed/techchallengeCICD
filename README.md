@@ -1,4 +1,4 @@
-# This project is about deploument of Techchallenge app using Azure CICD in docker container.
+# This project is about deployment of Techchallenge app using Azure CICD in docker container.
 
 - Login to AzureDev hub-  https://dev.azure.com
 - Create a project.
